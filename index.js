@@ -42,7 +42,7 @@ function createEmployeeRecord(array) {
   function hoursWorkedOnDate(employeeRecord, date) {
     const timeInEvent = employeeRecord.timeInEvents.find(event => event.date === date);
     const timeOutEvent = employeeRecord.timeOutEvents.find(event => event.date === date);
-    return (timeOutEvent.hour - timeInEvent.hour) / 100; // Convert to hours
+    return (timeOutEvent.hour - timeInEvent.hour) / 100; 
   }
   
   // Calculate wages earned on a specific date
